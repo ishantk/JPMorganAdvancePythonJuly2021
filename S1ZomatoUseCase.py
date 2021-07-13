@@ -90,7 +90,7 @@ while True:
         filter = input("Enter the Filter from [pricePerPerson, timeToDeliver, ratings]: ")
         n = len(restaurants)
 
-        for i in range(0, n): # 0, 1, 2, 3, 4
+        for i in range(0, n):# 0, 1, 2, 3, 4
             for j in range(0, n-i-1):
                 if restaurants[j][filter] > restaurants[j+1][filter]:
                     restaurants[j], restaurants[j+1] = restaurants[j+1], restaurants[j]
